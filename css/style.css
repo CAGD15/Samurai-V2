@@ -1,0 +1,1249 @@
+@font-face {
+    font-family: "titulo";
+    src: url(../fonts/Ponzu-regular.otf);
+
+}
+
+@font-face {
+    font-family: "relleno";
+    src: url(../fonts/aauxnextmdwebfont.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Around";
+    color: rgb(0, 0, 0);
+    font-family: "relleno";
+
+}
+
+
+
+body {
+
+    background: #ffffff;
+}
+
+
+a {
+    text-decoration: none;
+    color: #acacac;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: "titulo";
+}
+
+section {
+    margin-top: 100px;
+}
+
+
+p {
+    font-family: 'relleno';
+    color: #acacac;
+    line-height: 20px;
+    font-size: 1rem;
+}
+
+
+/*/////////////////HEADER///////////////////*/
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    backdrop-filter: blur(5px);
+    transition: .6s ease;
+}
+
+.menu-bar {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+.menu-bar img {
+    width: 20px;
+}
+
+.close {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+#header .nipon img {
+    width: 150px;
+    position: absolute;
+    transform: translate(-11em, -8.1em);
+}
+
+#header .nav {
+
+    display: flex;
+    gap: 40px;
+
+}
+
+#header .title {
+    transform: translateX(5rem);
+    font-size: 15px;
+}
+
+/*/////////////////HOME///////////////////*/
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .img-home img {
+    width: 700px;
+    transform: translateX(-50px);
+    z-index: 0;
+}
+
+
+
+.home .title h1 {
+    font-size: 3em;
+    margin-left: 5rem;
+    width: 300px;
+}
+
+
+.home .text p {
+
+    width: 300px;
+    color: #000000;
+    transform: translateX(-130px);
+    z-index: 1;
+
+}
+
+/*/////////////////TERMINOLOGY///////////////////*/
+
+.terminology {
+
+    display: flex;
+
+    background-image: url(../img/bg.jpeg);
+    background-size: cover;
+}
+
+.terminology .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.terminology .left h2 {
+
+    font-size: 2.3em;
+    color: #bda381;
+    margin-bottom: 20px;
+
+}
+
+.terminology .left p {
+
+    color: rgb(0, 0, 0);
+    background: #fffdfdaa;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-bottom: 40px;
+
+}
+
+.terminology .rigth img {
+
+    max-width: 700px;
+    bottom: 0;
+    transform: translateY(6px);
+}
+
+/*///////////////HISTORY////////////////////*/
+
+.history{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20vh;
+    
+}
+
+.history .line-history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+}
+
+.history .line-history .title-line h2 {
+    font-size: 3em;
+    margin: 20px 10px;
+    color: #EB340D;
+    margin-left: 100px;
+    
+}
+
+.history .line-history .title-line p {
+    margin-left: 100px;
+    width: 550px;
+    margin-bottom: 40px;
+}
+
+.history .history-img img {
+    max-width: 1150px;
+    position: absolute;
+    transform: translate(-60em,-30em);
+    z-index: -1;
+}
+
+.sub-history {
+    margin-left: 180px;
+}
+.sub-history  h3 {
+
+    margin-bottom: 15px;
+
+}
+.sub-history p {
+    margin-bottom: 50px;
+}
+/*//////////////////////cyrcle-line///////////////////////////*/
+.line-cyrcle{
+    position: absolute;
+    left: 130px;
+    margin-top: 180px;
+}
+
+.line-cyrcle .line{
+    background-color: #000000;
+    height: 650px;
+    width: 1px;
+    opacity: .4;
+    display: block;
+
+}
+
+.line-cyrcle .cyrcle-1{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #EB340D;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: #ffffff;
+ 
+}
+
+.line-cyrcle .cyrcle-2{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #EB340D;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 166px;
+    transform: translateX(-50%);
+    background: #ffffff;
+ 
+}
+
+.line-cyrcle .cyrcle-3{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #EB340D;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 413px;
+    transform: translateX(-50%);
+    background: #ffffff;
+ 
+}
+
+.line-cyrcle .cyrcle-4{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #EB340D;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 642px;
+    transform: translateX(-50%);
+    background: #ffffff;
+ 
+}
+/*//////////////////////Grandes Samurais///////////////////////////*/
+
+
+.banner  img {
+    width: 1280px;
+    position:absolute;
+    z-index: -1;
+}
+
+.banner .text-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+    background-color: #c4c4c4ae;
+    padding: 40px 20px;
+    border-radius: 20px;
+    transform: translate(15%, 60%);
+    
+} 
+
+.banner .text-banner h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #EB340D;
+}
+.banner .text-banner p {
+    text-align: center;
+    color: #000000;
+}
+/*//////////////////////Grandes Samurais - Los samurais///////////////////////////*/
+
+#blanco {
+    margin-top: 60vh;
+}
+.samurai-1 .samurai-flex {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.samurai-1 .img-samurai-1 img{
+
+    position: absolute;
+    z-index: -1;
+    transform: translate(40em, -90%);
+    width: 550px;
+
+}
+
+.samurai-1 .samurai-flex .title h2 {
+   font-size: 5em;
+   margin-top: 50px;
+   margin-left: 60px;
+
+}
+
+.samurai-1 .samurai-flex .text-samurai-1 {
+    width: 400px;
+}
+.samurai-1 .samurai-flex .text-samurai-1 p {
+    margin-left: 60px;
+    margin-top: 40px;
+}
+.samurai-1 .samurai-flex .text-samurai-1 .btn{
+    margin-top: 40px;
+}
+.samurai-1 .samurai-flex .text-samurai-1 .btn strong a {
+
+    margin-left: 70px;
+    color: #ffffff;
+    padding: 20px 40px;
+   
+  
+}
+
+.btn .trazo-btn img{
+
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    transform: translate(40px, -93px);
+
+}
+
+.line-red {
+    border: 2px solid #EB340D;
+    width: 250px;
+    height: 1px;
+    position: absolute;
+    margin-left: 65px ;
+}
+
+.line-red-small {
+    border: 2px solid #EB340D;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    margin-left: 65px ;
+
+}
+ .top {
+     transform: translateY(-150px);
+ }
+
+
+ /*/////////////////////////////////////////////////////////*/
+
+ .samurai-2 {
+    margin-top: 30vh;
+    background-color: #000000;
+    height: 900px;
+}
+.samurai-2 .samurai-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.samurai-2 .img-samurai-1 img{
+
+    position: absolute;
+    z-index: 0;
+    transform: translate(5em, -88%);
+    width: 550px;
+
+}
+
+.samurai-2 .samurai-flex .title h2 {
+   font-size: 5em;
+   margin-top: 50px;
+   margin-left: 250px;
+   text-align: end;
+   color: #EB340D;
+   position: relative;
+   z-index: 1;
+}
+
+.samurai-2 .samurai-flex .text-samurai-1 {
+    width: 400px;
+}
+.samurai-2 .samurai-flex .text-samurai-1 p {
+    margin-left: 5px;
+    margin-top: 40px;
+    text-align: end;
+}
+.samurai-2 .samurai-flex .text-samurai-1 .btn-2{
+    margin-top: 40px;
+}
+.samurai-2 .samurai-flex .text-samurai-1 .btn-2 strong a {
+
+    margin-left: 210px;
+    color: #ffffff;
+    padding: 20px 40px;
+    position: relative;
+   
+  
+}
+
+.btn-2 .trazo-btn img{
+
+    position: absolute;
+    
+    width: 250px;
+    transform: translate(175px, -93px);
+    z-index: 0;
+
+}
+
+.line-red {
+    border: 2px solid #EB340D;
+    width: 250px;
+    height: 1px;
+    position: absolute;
+    margin-left: 65px ;
+    margin-top: 30px;
+}
+.line-red-2 {
+    border: 2px solid #EB340D;
+    width: 200px;
+    height: 1px;
+    position: absolute;
+    margin-left: 65px ;
+    margin-top: 50px;
+}
+.line-red-3 {
+    border: 2px solid #EB340D;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    margin-left: 65px ;
+    margin-top: 70px;
+}
+
+
+.line-red-small {
+    border: 2px solid #EB340D;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    margin-left: 65px ;
+
+}
+ .top {
+     transform: translateY(-150px);
+ }
+
+ .samurai-1 .img-samurai-4 img{
+
+    position: absolute;
+    z-index: -1;
+    transform: translate(35em, -100%);
+    width: 600px;
+
+}
+
+.samurai-2 .img-samurai-5 img{
+
+    position: absolute;
+    z-index: 0;
+    transform: translate(5em, -82%);
+    width: 550px;
+
+}
+
+.samurai-1 .img-samurai-6 img{
+
+    position: absolute;
+    z-index: -1;
+    transform: translate(40em, -88%);
+    width: 500px;
+
+}
+
+/*//////////////////////Arte Samurai///////////////////////////*/
+
+
+#home-galeria {
+    margin-top: 25vh;
+}
+
+.home-galeria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-galeria .title {
+    width: 100%;
+}
+
+.home-galeria .title h1 {
+
+    font-size: 3em;
+    width: 60%;
+    margin-left: 70px;
+    color: #EB340D;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+}
+
+.home-galeria  p{
+ 
+    width: 80%;
+    margin-right: 100px;
+    color: #000000;
+
+}
+
+.home-galeria a {
+    margin-top: 20px;
+    color: #EB340D;   
+    font-size: 1.2em; 
+}
+.home-galeria a > i {
+    color: #EB340D;
+    margin-left: 10px;
+    transform: translateY(2px);
+    animation: arrow-x ease-out 2s infinite;
+}
+
+@keyframes arrow-x{
+  0%{
+    transform: rotateX(0);
+    transform: translateY(2px);
+  }
+
+  50%{
+    transform: translateY(2px);
+    transform: translateX(10px);
+  }
+  
+}
+.gallery {
+    display: flex;
+}
+
+
+.gallery .left {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+
+    margin-left: 60px;
+}
+
+.gallery .left img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 10px 10px;
+}
+.gallery .ritgh {
+    width: 35%;
+    display: flex;
+}
+.gallery .ritgh img {
+    width: 350px;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.armas-line {
+
+    margin-bottom: 250px;
+
+}
+
+/*//////////////////////Proverbios///////////////////////////*/
+
+
+.proverbios-home{
+    display: flex;
+   
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.proverbios-home .title h1{
+    
+    font-size: 4em;
+    text-align: end;
+
+    margin-left: 100px;
+    margin-top: 100px;
+
+}
+.proverbios-home .title p{
+   
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 200px;
+
+}
+.proverbios-home .text .red-text{
+    background: #eb360dd3;
+    height: 1200px;
+    width: 500px;
+    position: absolute;
+    transform: translate(80px, 9em);
+    border-radius: 10px;
+    z-index: -1;
+}
+.proverbios-home .text  p {
+    margin-left: 100px;
+    width: 400px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.proverbios-home .text  h2 {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    
+}
+
+.proverbios-home img {
+
+    position: absolute;
+    width: 100%;
+    transform: translate(-100px,20px);
+    z-index: -1;
+}
+i{
+    color: #acacac;
+    text-align: center;
+}
+
+.space-text {
+    margin-top: 8em;
+}
+
+/*//////////////////////Armamentos///////////////////////////*/
+
+.armamentos-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.armamentos-banner .title {
+    width: 400px;
+    margin-left: 100px;
+    margin-bottom: 150px;
+    line-height: 60px;
+}
+
+.armamentos-banner .title h1 {
+    font-size: 4em;
+    margin-bottom: 30px;
+    font-weight: 800;
+    
+}
+.armamentos-banner .title .armamentos  p{
+    
+    transform: translateY(-4.5em);
+    text-align: center;
+    color: #000000;
+    font-size: 1.3em;
+    background: #ffffffb8;
+    opacity: .8;
+    
+    
+}
+
+.armamentos-banner .armamentos {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+.armamentos-banner .armamentos img {
+    
+    width: 180px;
+    height: 130px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: .8;
+  
+}
+
+
+.armamentos-banner .title .armamentos  p:hover{
+    opacity: 1;
+    transition: .2s ease;
+    font-weight: 600;
+    color: #EB340D;
+    
+    
+}
+
+.sectiones-arms img{
+
+    max-width: 400px;
+    margin-right: 150px;
+
+}
+
+/*//////////////////////Galeria 1///////////////////////////*/
+
+
+.seudo-1 {
+    margin-top: 100px;
+   
+}
+
+.seudo-2{
+    margin-top: 200px;
+}
+
+
+/*=======Footer=======*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #EB340D;
+    width: 100%;
+    margin-top: 50px;
+    padding: 3rem 2rem;
+    color: #fff;
+  }
+  footer a{
+    color: #fff;
+  }
+  
+  .footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1150px;
+  }
+  
+  .footer-container .about h2{
+    font-size: 3em;
+    font-weight: 600;
+    background: linear-gradient(to top, transparent 0%, #fff 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .8;
+  }
+  
+  .footer-container .about p{
+   
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  
+  .footer-container .info,
+  .footer-container .follow{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer-container .info h3,
+  .footer-container .follow h3{
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .footer-container .info ul,
+  .footer-container .follow ul{
+    display: flex;
+  }
+  
+  .footer-container .info a{
+     margin: 20px;
+  }
+  
+  .footer-container .follow a{
+    font-size: 1.5em;
+    margin: 20px;
+  }
+  
+  .footer-copyright p{
+   
+    font-weight: 300;
+    margin-top: 50px;
+  }
+
+
+  .img-armadura img {
+      width: 600px;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(50%);
+  }
+  
+  
+  .kabuto {
+    border: 2px solid #EB340D;
+    width: 290px;
+    height: 1px;
+    position: absolute;
+    transform: rotate(46deg);
+    margin-left: 401px;
+    margin-top: 61px;
+    border-radius: 50%;
+  } 
+
+
+  .sode {
+    border: 2px solid #EB340D;
+    width: 390px;
+    height: 1px;
+    position: absolute;
+    transform: rotate(2deg);
+    margin-left: 354px;
+    margin-top: 305px;
+    border-radius: 50%;
+  }
+
+  
+  .nodowa {
+    border: 2px solid #EB340D;
+    width: 390px;
+    height: 1px;
+    position: absolute;
+    transform: rotate(22deg);
+    margin-left: 271px;
+    margin-top: 219px;
+    border-radius: 50%;
+  }
+
+  .hato-o-no-ita {
+    border: 2px solid #EB340D;
+    width: 390px;
+    height: 1px;
+    position: absolute;
+    transform: rotate(348deg);
+    margin-left: 283px;
+    margin-top: 397px;
+    border-radius: 50%;
+  }
+
+  
+  .kote {
+    border: 2px solid #EB340D;
+    width: 390px;
+    height: 1px;
+    position: absolute;
+    transform: rotate(338deg);
+    margin-left: 211px;
+    margin-top: 497px;
+    border-radius: 50%;
+  }
+
+  .do {
+    border: 2px solid #EB340D;
+    width: 390px;
+    height: 1px;
+    position: absolute;
+    transform: rotate(324deg);
+    margin-left: 279px;
+    margin-top: 526px;
+    border-radius: 50%;
+  }
+  .haidate {
+    border: 2px solid #EB340D;
+    width: 390px;
+    height: 1px;
+    position: absolute;
+    transform: rotate(322deg);
+    margin-left: 321px;
+    margin-top: 664px;
+    border-radius: 50%;
+  }
+  .sune-ate {
+    border: 2px solid #EB340D;
+    width: 334px;
+    height: 1px;
+    position: absolute;
+    transform: rotate(308deg);
+    margin-left: 415px;
+    margin-top: 852px;
+    border-radius: 50%;
+  }
+  .tsurumaki {
+    border: 2px solid #EB340D;
+    width: 274px;
+    height: 1px;
+    position: absolute;
+    transform: rotate(297deg);
+    margin-left: 484px;
+    margin-top: 979px;
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screend tablet*/
+
+@media screen and (max-width: 1070px) {
+
+
+    body {
+        max-width: 1020px;
+    }
+
+
+    #header .nipon img {
+        width: 120px;
+        transform: translate(-9em, -8.1em);
+    }
+
+    #header .nav {
+
+        gap: 20px;
+        font-size: .9em;
+        transform: translateX(-40px);
+
+
+    }
+
+    #header .title {
+
+        font-size: 12px;
+    }
+
+
+
+    .home .img-home img {
+        width: 400px;
+    }
+
+
+
+    .home .title h1 {
+        font-size: 2em;
+        width: 200px;
+    }
+
+
+    .home .text p {
+
+        width: 271px;
+        font-size: .8em;
+        transform: translateX(-90px);
+
+    }
+
+    /*/////////////////TERMINOLOGY///////////////////*/
+
+    .terminology .left p {
+        width: 450px;
+    }
+    .terminology .rigth img{
+        max-width: 100%;
+    }
+
+}
+
+/*=======Media query max-width 730px=======*/
+@media screen and (max-width: 730px) {
+
+
+
+
+
+    .menu-bar {
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+
+    .menu-bar img {
+        width: 40px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home .title h1 {
+        max-width: 100%;
+        align-items: center;
+        font-size: 1.7em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .home .img-home img {
+        max-width: 100%;
+        transform: translateX(0);
+        margin-top: 40px;
+
+    }
+
+    .home .text p {
+        text-align: center;
+        transform: translateX(0);
+
+    }
+
+    .navigation {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        transition: .5s ease;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 999;
+    }
+
+    .navigation.active {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease;
+    }
+
+    .navigation .title {
+        margin-top: 40px;
+    }
+
+    .navigation .title h2,
+    .navigation .title p {
+        align-items: center;
+        transform: translateX(0);
+        font-size: 2rem;
+    }
+
+    #header .nav {
+        transform: translateX(0);
+    }
+
+    .navigation .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navigation .nav a {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .navigation .nipon img {
+        top: 0;
+        margin-left: 40px;
+        margin-top: 65px;
+    }
+
+
+    .close {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navigation .close img {
+        cursor: pointer;
+        position: fixed;
+        bottom: 0;
+        width: 20px;
+        margin-bottom: 100px;
+
+    }
+
+    /*/////////////////TERMINOLOGY///////////////////*/
+
+    .terminology {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .terminology .left h2 {
+        margin-top: 20px;
+        text-align: center;
+        margin-left: -80px;
+    }
+
+    .terminology .left p {
+
+        width: 80%;
+    }
+}
